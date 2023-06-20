@@ -1,13 +1,12 @@
 import express from "express"
+import router from "./routes"
 
 const app = express()
 
 const PORT = "3000"
 const HOST = "localhost"
 
-app.get("", (req,res) => {
-  res.send("pagina inicial")
-})
+app.use(router)
 
 app.listen(PORT, () => {
   console.log(`Server is runing in http://${HOST}:${PORT}`)
