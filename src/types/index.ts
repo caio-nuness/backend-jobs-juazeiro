@@ -1,10 +1,6 @@
-import { Request, Response } from "express"
-
-interface requestTypes  {
+interface RequestType {
   req: Request,
-  res: Response,
-  params: Request
-  id: Request
+  res: Response
 }
 
-export { requestTypes }
+export { RequestType }
